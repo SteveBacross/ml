@@ -1,0 +1,42 @@
+name: .NET
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+permissions:
+  id-token: write
+  contents: write
+  packages: write
+  
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup .NET SDK
+        uses: actions/setup-dotnet@v2
+        with:
+          dotnet-version: '8.0.401'
+
+      - name: Restore dependencies
+        run: dotnet restore
+
+      - name: Build
+        run: dotnet build --configuration Release --no-restore
+
+      - name: Run tests
+        run: dotnet test --no-restore --verbosity normal
+
+      - name: Publish
+        run: dotnet publish -c Release -r win10-x64 --self-contained -o ./publish
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: published-app
+          path: ./publish

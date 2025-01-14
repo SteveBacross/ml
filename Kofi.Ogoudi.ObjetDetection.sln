@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# 
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kofi.Ogoudi.ObjetDetection", "Kofi.Ogoudi.ObjetDetection\Kofi.Ogoudi.ObjetDetection.csproj", "{3FDC872D-F06B-4765-89CC-218A0F08322C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Kofi.Ogoudi.ObjectDetection.Console", "Kofi.Ogoudi.ObjectDetection.Console", "{C31A993D-12B8-414F-89E6-FA37F182647A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kofi.Ogoudi.ObjectDetection.Console", "Kofi.Ogoudi.ObjectDetection.Console\Kofi.Ogoudi.ObjectDetection.Console\Kofi.Ogoudi.ObjectDetection.Console.csproj", "{D7E3B089-5168-470D-9985-DBBEEA5C3187}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Kofi.Ogoudi.ObjectDetection.Tests", "Kofi.Ogoudi.ObjectDetection.Tests", "{37B3F7F6-614C-42C7-A9A9-5D7200FFCDD8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kofi.Ogoudi.ObjectDetection.Tests", "Kofi.Ogoudi.ObjectDetection.Tests\Kofi.Ogoudi.ObjectDetection.Tests\Kofi.Ogoudi.ObjectDetection.Tests.csproj", "{6B1A0737-C25E-4939-88EF-4632B0A4DCA5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3FDC872D-F06B-4765-89CC-218A0F08322C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FDC872D-F06B-4765-89CC-218A0F08322C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FDC872D-F06B-4765-89CC-218A0F08322C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FDC872D-F06B-4765-89CC-218A0F08322C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7E3B089-5168-470D-9985-DBBEEA5C3187}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7E3B089-5168-470D-9985-DBBEEA5C3187}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7E3B089-5168-470D-9985-DBBEEA5C3187}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7E3B089-5168-470D-9985-DBBEEA5C3187}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B1A0737-C25E-4939-88EF-4632B0A4DCA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B1A0737-C25E-4939-88EF-4632B0A4DCA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B1A0737-C25E-4939-88EF-4632B0A4DCA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B1A0737-C25E-4939-88EF-4632B0A4DCA5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D7E3B089-5168-470D-9985-DBBEEA5C3187} = {C31A993D-12B8-414F-89E6-FA37F182647A}
+		{6B1A0737-C25E-4939-88EF-4632B0A4DCA5} = {37B3F7F6-614C-42C7-A9A9-5D7200FFCDD8}
+	EndGlobalSection
+EndGlobal

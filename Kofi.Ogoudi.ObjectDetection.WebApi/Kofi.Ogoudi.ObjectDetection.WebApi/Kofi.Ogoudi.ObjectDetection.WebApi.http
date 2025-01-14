@@ -1,0 +1,6 @@
+@Kofi.Ogoudi.ObjectDetection.WebApi_HostAddress = http://localhost:5008
+
+GET {{Kofi.Ogoudi.ObjectDetection.WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

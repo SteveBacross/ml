@@ -1,0 +1,5 @@
+C:\Users\Steeve\Documents\MicrosoftTechnologie\Kofi.Ogoudi.ObjetDetection\Kofi.Ogoudi.ObjetDetection\obj\Debug\net8.0\Kofi.Ogoudi.ObjetDetection.csproj.AssemblyReference.cache
+C:\Users\Steeve\Documents\MicrosoftTechnologie\Kofi.Ogoudi.ObjetDetection\Kofi.Ogoudi.ObjetDetection\obj\Debug\net8.0\Kofi.Ogoudi.ObjetDetection.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Steeve\Documents\MicrosoftTechnologie\Kofi.Ogoudi.ObjetDetection\Kofi.Ogoudi.ObjetDetection\obj\Debug\net8.0\Kofi.Ogoudi.ObjetDetection.AssemblyInfoInputs.cache
+C:\Users\Steeve\Documents\MicrosoftTechnologie\Kofi.Ogoudi.ObjetDetection\Kofi.Ogoudi.ObjetDetection\obj\Debug\net8.0\Kofi.Ogoudi.ObjetDetection.AssemblyInfo.cs
+C:\Users\Steeve\Documents\MicrosoftTechnologie\Kofi.Ogoudi.ObjetDetection\Kofi.Ogoudi.ObjetDetection\obj\Debug\net8.0\Kofi.Ogoudi.ObjetDetection.csproj.CoreCompileInputs.cache
