@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Kofi.Ogoudi.ObjectDetection.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+170b9fac1d976cd814a1151b8ecb3d7f9e6837ca")]
 [assembly: System.Reflection.AssemblyProductAttribute("Kofi.Ogoudi.ObjectDetection.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Kofi.Ogoudi.ObjectDetection.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

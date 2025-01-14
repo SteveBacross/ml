@@ -1,3 +1,5 @@
+using Microsoft.AspNetCore.Mvc;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -16,27 +18,22 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-var summaries = new[]
+app.MapPost("/ObjectDetection", async ([FromForm] IFormFileCollection files) =>
 {
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
+    if (files.Count < 1)
+        return Results.BadRequest();
+    using var sceneSourceStream = files[0].OpenReadStream();
+    using var sceneMemoryStream = new MemoryStream();
+    sceneSourceStream.CopyTo(sceneMemoryStream);
+    var imageSceneData = sceneMemoryStream.ToArray();
+    // Your implementation code
+    throw new NotImplementedException();
+    // La méthode ci-dessous permet de retourner une image depuis un tableau de bytes,
+    var imageData = new bytes[];
+    var imageData = new byte[]{};
+    return Results.File(imageData, "image/jpg");
+}).DisableAntiforgery();
 
-app.MapGet("/weatherforecast", () =>
-    {
-        var forecast = Enumerable.Range(1, 5).Select(index =>
-                new WeatherForecast
-                (
-                    DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-                    Random.Shared.Next(-20, 55),
-                    summaries[Random.Shared.Next(summaries.Length)]
-                ))
-            .ToArray();
-        return forecast;
-    })
-    .WithName("GetWeatherForecast")
-    .WithOpenApi();
-
-app.Run();
 
 record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
 {
